@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean class="com.app.bean.Module" name="mobj">
+	<constructor-arg>
+		<value>66</value>
+	</constructor-arg>
+	<constructor-arg>
+		<value>M1</value>
+	</constructor-arg>
+	<constructor-arg>
+		<list>
+			<value>A</value>
+			<value>B</value>
+			<value>C</value>
+		</list>
+		
+	</constructor-arg>
+</bean>
+<bean class="com.app.bean.Project" name="pobj">
+	<constructor-arg>
+		<value>100</value>
+	</constructor-arg>
+	<constructor-arg>
+		<value>P1</value>
+	</constructor-arg>
+	<constructor-arg>
+		<ref bean="mobj"/>
+	</constructor-arg>
+</bean>
+
+</beans>
