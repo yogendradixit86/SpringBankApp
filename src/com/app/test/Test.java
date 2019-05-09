@@ -12,7 +12,7 @@ public class Test {
 		Project p=ac.getBean("pobj",Project.class);
 		System.out.println(p);
 		System.out.println("Done"); 
-		//ss
+		//test done
 
 	}
 
